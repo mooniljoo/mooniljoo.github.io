@@ -7,8 +7,8 @@ categories: icebreaker update
 첫 포스팅 입니다:-)
 
 
-​```python
+```python
 def print_hi(name):
   print("hello", name)
 print_hi('guys!')
-​```
+```
