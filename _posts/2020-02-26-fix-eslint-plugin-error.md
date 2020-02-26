@@ -1,6 +1,6 @@
 ---
 title: "Failed to load plugin 'prettier' declared in 'CLIOptions'. Cannot find module eslint-plugin-prettier."
-date: 2020-02-25 16:59:00 -0400
+date: 2020-02-26 14:20:00 -0400
 categories: prettier debug
 ---
 
