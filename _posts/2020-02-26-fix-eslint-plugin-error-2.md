@@ -6,7 +6,7 @@ categories: eslint webpack debug
 
 ESLint 를 적용이 안되고 계속 오류를 토해내고
 
-```
+```bash
 Failed to load plugin 'jsx-a11y' declared in 'userful-tools\package.json » eslint-config-airbnb » ~\react-tutorial\userful-tools\node_modules\eslint-config-airbnb\rules\react-a11y.js': Cannot find module 'eslint-plugin-jsx-a11y' Require stack: - ~\react-tutorial\__placeholder__.js
 ```
 

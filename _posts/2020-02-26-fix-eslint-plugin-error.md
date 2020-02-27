@@ -6,7 +6,7 @@ categories: prettier debug
 
 vscode의 esLint 설정에서 auto-fixing on Save를 체크하면
 
-```
+```bash
 Failed to load plugin 'prettier' declared in 'CLIOptions'. Cannot find module eslint-plugin-prettier.
 ```
 
@@ -16,7 +16,7 @@ Failed to load plugin 'prettier' declared in 'CLIOptions'. Cannot find module es
 
 vscode의 setting.json에
 
-```
+```json
 "eslint.workingDirectories": ["./backend", "./frontend"],
 ```
 
