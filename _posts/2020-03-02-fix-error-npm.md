@@ -1,7 +1,7 @@
 ---
 title: "npm ERROR maximum call stack size exceeded"
 date: 2020-03-02 15:12:00 -0400
-categories: npm reactnative debug
+categories: npm reactnative debug expo
 ---
 
 expo-cli 를 통해 리액트네이티브를 사용 중
