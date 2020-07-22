@@ -5,4 +5,3 @@ module.exports = withFonts({
     return config;
   },
 });
-// module.exports = withSass();
