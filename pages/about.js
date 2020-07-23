@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import desc from "../description.json";
 export default function About() {
   const [profile, setProfile] = useState([]);
   useEffect(() => {
@@ -86,12 +87,59 @@ export default function About() {
           </div>
         </div>
       </aside>
-      <section className="container_item">
-        <article>
-          <h2>biography</h2>
+      <section className="container_item right">
+        <article className="prose_text">
+          <h2 className="screen_out">Introducing</h2>
+          <div>
+            <p className="kor">
+              안녕하세요, 문일주입니다😁😁
+              <br />
+              동기부여와 위안을 찾는 모든 사람들을 위한 사람이 되기 위해
+              노력하고 있습니다. 건강한 삶을 만드는 제 여정에 동참해주세요!
+            </p>
+            <p>
+              Hi! I'm Il-joo. I try to be a person for anyone who’s looking for
+              motivation AND comfort. Join me in my journey of building a happy,
+              healthy life!
+            </p>
+          </div>
+          <div>
+            <p className="kor">
+              <a
+                href="https://www.16personalities.com/ko"
+                title="Let's go to MBTI test"
+              >
+                MBTI 테스트
+              </a>
+              결과는&nbsp;
+              <a
+                href="https://namu.wiki/w/ENFJ#s-3"
+                title="Go to see the features of ENFJ personality"
+              >
+                ENFJ
+              </a>
+              !
+              <br />더 나은 세상을 만들기 위해 노력해요. 모든 사람들이 융화되는
+              것을 좋아해서 저는 세계평화🌍를 꿈꿔요. 덕분에 사람들과 잘
+              어울리고 늘 바라는 이상적인 세계가 있어요. 이 때문에 가끔 상처를
+              받기도 하지만 모두가 행복했으면 좋겠다는 마음으로 매일 노력합니다
+            </p>
+            <p>
+              I like the efforts to make a better world. I like everyone to be
+              in harmony! My dream is Peace of World🌍. I always hope for an
+              ideal world where people get along well. I sometimes get hurt
+              because of this, but I try to make everyone happy
+            </p>
+          </div>
         </article>
       </section>
       <style jsx>{`
+        .container_item.right {
+          flex: 1 1 300px;
+        }
+        .container_item.right > article {
+          margin-bottom: 3em;
+        }
         .container {
           max-width: 1024px;
           margin: 20px auto;
