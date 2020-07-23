@@ -1,21 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import Router from "next/router";
 import { useEffect } from "react";
 import desc from "../description.json";
 
-Router.onRouteChangeStart = (url) => {
-  alert(`Route가 ${url}로 변경될 것입니다...!`);
-};
 export default function Header() {
-  useEffect(() => {
-    alert(1);
-    // Prefetch the dashboard page as the user will go there after the login
-    alert(Router.router());
-    return () => {
-      alert("잉");
-    };
-  }, []);
   return (
     <header className="header">
       <div className="header-wrapper">
@@ -25,7 +13,7 @@ export default function Header() {
             .map((e, idx) => (
               <a
                 className="sns__link"
-                href={e.title}
+                href={e.href}
                 title={`Link to ${e.title}`}
                 key={idx}
               >
@@ -73,6 +61,8 @@ export default function Header() {
           width: 200px;
         }
         .header {
+          background-image: url(/images/bg_waves.jpg);
+          background-position-y: 50%;
           border-bottom: 1px solid #eee;
         }
         .menu__link:hover .menu__text,
@@ -90,11 +80,6 @@ export default function Header() {
         .logo__text {
           font-size: 70px;
           font-weight: 700;
-        }
-        .header {
-          position: relative;
-          background: #fff;
-          width: 100%;
         }
         .header-wrapper {
           max-width: 1300px;
