@@ -53,6 +53,11 @@ export default function Header() {
                   </Link>
                 </li>
               ))}
+              <li className="menuitem" role="menuitem">
+                <a className="menu__link" href="/documents/resume.pdf">
+                  <span className="menu__text">Resume</span>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>

@@ -7,12 +7,7 @@
   "image": "https://cdn.dribbble.com/users/332943/screenshots/3461038/recruitment-company-website-design.jpg",
   "description": "MOONILJOO WEBSITE",
   "url": "",
-  "navList": [
-    { "title": "work" },
-    { "title": "extras" },
-    { "title": "about" },
-    { "title": "resume" }
-  ],
+  "navList": [{ "title": "work" }, { "title": "extras" }, { "title": "about" }],
   "snsList": [
     {
       "title": "github",
