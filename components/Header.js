@@ -20,26 +20,31 @@ export default function Header() {
     <header className="header">
       <div className="header-wrapper">
         <div className="snsList">
-          {desc.snsList.map((e, idx) => (
-            <a
-              className="sns__link"
-              href={e.title}
-              title={`Link to ${e.title}`}
-              key={idx}
-            >
-              <img
-                className="snsIcon"
-                src={e.src}
-                alt={`${e.title} thumnail`}
-              />
-              <span className="screen-reader-text">{e.title}</span>
-            </a>
-          ))}
+          {desc.snsList
+            .filter((e) => e.show == true)
+            .map((e, idx) => (
+              <a
+                className="sns__link"
+                href={e.title}
+                title={`Link to ${e.title}`}
+                key={idx}
+              >
+                <img
+                  className="snsIcon"
+                  src={e.src}
+                  alt={`${e.title} thumnail`}
+                />
+                <span className="screen-reader-text">{e.title}</span>
+              </a>
+            ))}
         </div>
         <div className="c-layout__row">
           <figure className="logo">
             <a className="logo__link" title="Go to Index" href="/">
-              <span className="logo__text">WEBSITE</span>
+              <img
+                src="/images/logo_mooniljoo.svg"
+                alt="logo_mooniljoo image"
+              />
             </a>
           </figure>
           <nav className="nav" aria-level="MainMenu">
@@ -64,6 +69,9 @@ export default function Header() {
       </div>
 
       <style jsx>{`
+        .logo__link {
+          width: 200px;
+        }
         .header {
           border-bottom: 1px solid #eee;
         }

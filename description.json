@@ -10,36 +10,43 @@
   "navList": [{ "title": "work" }, { "title": "extras" }, { "title": "about" }],
   "snsList": [
     {
+      "show": true,
       "title": "github",
       "src": "/images/icons/github.svg",
       "href": "https://github.com/mooniljoo"
     },
     {
+      "show": false,
       "title": "instagram",
       "src": "/images/icons/instagram.svg",
       "href": "https://www.instagram.com/oneweek.m"
     },
     {
+      "show": false,
       "title": "soundcloud",
       "src": "/images/icons/soundcloud.svg",
       "href": "https://soundcloud.com/oneweek123"
     },
     {
+      "show": false,
       "title": "behance",
       "src": "/images/icons/behance.svg",
       "href": "https://www.behance.net/moonezekiel"
     },
     {
+      "show": true,
       "title": "linkedin",
       "src": "/images/icons/linkedin.svg",
       "href": "https://www.linkedin.com/in/oneweek/"
     },
     {
+      "show": false,
       "title": "tumblr",
       "src": "/images/icons/tumblr.svg",
-      "href": "https://www.linkedin.com/in/oneweek/"
+      "href": "https://lovejoylove.tumblr.com/"
     },
     {
+      "show": true,
       "title": "email",
       "src": "/images/icons/email.svg",
       "href": "mailto://ezekielmoon@naver.com"
