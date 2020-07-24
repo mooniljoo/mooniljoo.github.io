@@ -124,6 +124,12 @@ export default class RootDocument extends Document {
                 src: url("/fonts/NotoSerifKR-Black.otf");
                 font-weight: 900;
               }
+
+              @media screen and (max-width: 1040px) {
+                body {
+                  font-size: 14px;
+                }
+              }
             `}
           </style>
         </Head>

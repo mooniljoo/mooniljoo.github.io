@@ -154,7 +154,7 @@ export default function About() {
           background: #fff;
           border-radius: 10px;
           box-shadow: 0 0 1px #ccc;
-          margin: 0 auto;
+          margin: 0 auto 50px;
         }
         .p-bio,
         .pcard-detail,
@@ -187,6 +187,12 @@ export default function About() {
           width: 100%;
           border-radius: 50%;
           overflow: hidden;
+        }
+        @media all and (max-width: 1024px) {
+          .container {
+            margin: 0 5%;
+            flex-direction: column-reverse;
+          }
         }
       `}</style>
     </div>

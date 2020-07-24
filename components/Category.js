@@ -114,6 +114,8 @@ export default function Category() {
         }
         .workList__item__title {
           font-size: 1.875em;
+          line-height: 1.3em;
+          margin-bottom: 0.1em;
         }
         .workList__item__desc {
           font-size: 1.05em;
@@ -153,7 +155,7 @@ export default function Category() {
           fill: #1d58ff;
         }
         .container {
-          width: 1024px;
+          max-width: 1024px;
           margin: 0 auto;
         }
 
@@ -162,6 +164,9 @@ export default function Category() {
         }
         .card-container.rowlist {
           flex-direction: column;
+        }
+        .card-container.rowlist .fig_img {
+          margin-right: 10px;
         }
 
         .card-container.tile {
@@ -183,6 +188,7 @@ export default function Category() {
           box-shadow: 0 0 0 1px #ccc;
           border-radius: 10px;
           margin-bottom: 10px;
+          padding: 10px;
         }
         .card > .card__link {
           display: flex;
@@ -204,6 +210,20 @@ export default function Category() {
         .fig_txt {
           flex-direction: column;
           display: flex;
+        }
+        a:hover {
+          text-decoration: initial;
+        }
+        figure {
+          margin: 0;
+        }
+        @media all and (max-width: 1040px) {
+          .container {
+            margin: 0 5%;
+          }
+          .card-container.tile .card {
+            width: 49%;
+          }
         }
       `}</style>
     </div>
