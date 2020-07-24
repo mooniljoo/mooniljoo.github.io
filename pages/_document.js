@@ -1,12 +1,10 @@
 import Document, { Head, Main, NextScript } from "next/document";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 import desc from "../description.json";
 export default class RootDocument extends Document {
   render() {
     return (
-      <html>
+      <html lang="kr">
         <Head>
           <meta
             name="viewport"
@@ -130,9 +128,7 @@ export default class RootDocument extends Document {
           </style>
         </Head>
         <body>
-          <Header />
           <Main />
-          <Footer />
           <NextScript />
         </body>
       </html>

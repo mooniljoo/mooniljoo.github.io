@@ -1,9 +1,11 @@
 import App from "next/app";
 import Head from "next/head";
 import React from "react";
+import SiteLayout from "../components/SiteLayout";
 
 import "../public/sass/reset.scss";
 import desc from "../description.json";
+import Layout from "../components/SiteLayout";
 
 export default class RootApp extends App {
   componentDidCatch(error, errorInfo) {
@@ -18,7 +20,9 @@ export default class RootApp extends App {
         <Head>
           <title>{desc.title}</title>
         </Head>
-        <Component {...pageProps} />
+        <SiteLayout>
+          <Component {...pageProps} />
+        </SiteLayout>
       </>
     );
   }

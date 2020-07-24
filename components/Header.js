@@ -1,9 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { useEffect } from "react";
 import desc from "../description.json";
 
-export default function Header() {
+export default function Header({ pathname }) {
   return (
     <header className="header">
       <div className="header-wrapper">
@@ -40,7 +39,13 @@ export default function Header() {
               {desc.navList.map((e, idx) => (
                 <li className="menuitem" role="menuitem" key={idx}>
                   <Link href={`./${e.title}`}>
-                    <a className="menu__link" title={e.title}>
+                    <a
+                      className={`menu__link ${
+                        pathname == "/" + e.title && "selected"
+                      }
+                      `}
+                      title={e.title}
+                    >
                       <span className="menu__text">{e.title}</span>
                     </a>
                   </Link>
@@ -66,7 +71,7 @@ export default function Header() {
           border-bottom: 1px solid #eee;
         }
         .menu__link:hover .menu__text,
-        .selected {
+        .menu__link.selected .menu__text {
           color: #1d58ff;
           border-bottom: 2px solid #1d58ff;
         }
