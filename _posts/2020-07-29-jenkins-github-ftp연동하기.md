@@ -2,7 +2,7 @@
 layout: post
 title: "Jenkins를 활용해 Github Repo가 푸시되면 ftp서버에 업로드 되도록 구성"
 date: 2020-07-29
-excerpt: "Jenkins"
+# excerpt: ""
 tags: ["ci", "jenkins", "github", "ftp", "publishoverftp"]
 comments: true
 ---
