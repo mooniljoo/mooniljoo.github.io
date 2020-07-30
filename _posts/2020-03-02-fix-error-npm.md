@@ -3,7 +3,7 @@ layout: post
 title: "npm ERROR maximum call stack size exceeded"
 date: 2020-03-02
 tags: ["npm", " reactnative ", "debug", "expo"]
-comments: true
+comments: false
 ---
 
 expo-cli 를 통해 리액트네이티브를 사용 중

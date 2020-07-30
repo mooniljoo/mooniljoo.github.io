@@ -4,7 +4,7 @@ title: "Jenkins를 활용해 Github Repo가 푸시되면 ftp서버에 업로드 
 date: 2020-07-29
 # excerpt: ""
 tags: ["ci", "jenkins", "github", "ftp", "publishoverftp"]
-comments: true
+comments: false
 ---
 
 1. Jenkins의 'Publish over FTP' 플러그인 설치<br/>

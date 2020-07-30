@@ -3,7 +3,7 @@ layout: post
 title: "Failed to load plugin 'prettier' declared in 'CLIOptions'. Cannot find module eslint-plugin-prettier."
 date: 2020-02-26
 tags: ["prettier", "debug"]
-comments: true
+comments: false
 ---
 
 vscode의 esLint 설정에서 auto-fixing on Save를 체크하면

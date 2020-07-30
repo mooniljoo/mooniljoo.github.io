@@ -3,7 +3,7 @@ layout: post
 title: "Failed to load plugin 'jsx-a11y' declared in eslint-config-airbnb"
 date: 2020-02-26
 tags: ["eslint", " webpack", " debug"]
-comments: true
+comments: false
 ---
 
 ESLint 를 적용이 안되고 계속 오류를 토해내고
